@@ -347,7 +347,7 @@ if (form) {
         submitBtn.textContent = 'Sending...';
         
         try {
-            const response = await fetch('https://api.casespin.fun/mail', {
+            const response = await fetch('https://api.casespin.fun/mail/contact.php', {
                 method: 'POST',
                 body: formData
             });
