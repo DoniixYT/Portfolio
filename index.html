@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan - Full Stack Developer Portfolio</title>
+    <meta name="description" content="Full-stack web developer specializing in modern frontend and backend technologies">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">N</div>
+            <div class="preloader-text">Loading...</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Background Grid -->
+    <div class="grid-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#hero" class="logo" id="logoLink">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">Nathan</span>
+                <span class="logo-bracket">/&gt;</span>
+                <span class="logo-tooltip">// TODO: Fix bugs, add features, drink coffee</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" data-text="About">About</a>
+                <a href="#skills" data-text="Skills">Skills</a>
+                <a href="#projects" data-text="Projects">Projects</a>
+                <a href="#contact" data-text="Contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span class="typing-text">Full Stack Developer • Powered by Coffee</span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="word" data-delay="0">Hi,</span>
+                    <span class="word" data-delay="100">I'm</span>
+                    <span class="word gradient-text" data-delay="200">Nathan</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="line" data-delay="300">I build exceptional digital experiences</span>
+                    <span class="line" data-delay="400">that combine beautiful design with powerful functionality</span>
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Let's Talk</span>
+                    </a>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll Down</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About the Project</span>
+                <h2 class="section-title">Full-Stack Expertise</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                    </svg>
+                    <h3>Modern Development</h3>
+                    <p>This project showcases my skills in full-stack web development — combining a clean, responsive frontend with a powerful and secure backend.</p>
+                </div>
+                <div class="about-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3>Performance First</h3>
+                    <p>Built with modern technologies to ensure scalability, performance, and great user experience across all devices and platforms.</p>
+                </div>
+                <div class="about-card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="6"/>
+                        <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                    <h3>Production Ready</h3>
+                    <p>Every project is built with best practices, clean architecture, and production-grade code that's maintainable and scalable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with daily</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React / Next.js</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML / CSS / JavaScript</span>
+                            <span class="skill-percent">98%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="98"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Tailwind CSS / SASS</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">TypeScript</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js / Express</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PHP / Laravel</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">MongoDB / MySQL</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">REST API / GraphQL</span>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="87"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & DevOps</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git / GitHub</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Docker / CI/CD</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">AWS / Cloud Services</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Testing / Jest</span>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Coffee Consumption</span>
+                            <span class="skill-percent">150%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Googling</span>
+                            <span class="skill-percent">100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Production-ready applications showcasing my expertise</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">E-Commerce</span>
+                            <span class="tag">PrestaShop</span>
+                            <span class="tag">WooCommerce</span>
+                        </div>
+                        <h3>HomeAGD.com</h3>
+                        <p>Professional e-commerce platform for home appliances with advanced product filtering, secure payments, and customer reviews.</p>
+                        <div class="project-links">
+                            <a href="https://homeagd.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="gaming">
+                    <div class="project-image">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Gaming</span>
+                            <span class="tag">Real-time</span>
+                        </div>
+                        <h3>CaseSpin.fun</h3>
+                        <p>Interactive gaming platform with real-time animations, user authentication, and dynamic reward system.</p>
+                        <div class="project-links">
+                            <a href="https://casespin.fun" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="agency">
+                    <div class="project-image">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Agency</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                        <h3>Vireo Media Agency</h3>
+                        <p>Modern content agency website with portfolio showcase, service pages, and contact integration for entrepreneurs.</p>
+                        <div class="project-links">
+                            <a href="https://vireomedia.agency" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">Have a project in mind? Let's discuss how we can work together.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Connect With Me</h3>
+                    <p>Follow me on X (Twitter) for updates, insights, and tech discussions.</p>
+                    <a href="https://x.com/dev_Doniix" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        @dev_Doniix
+                    </a>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nathan. Crafted with <span class="footer-heart">❤️</span> and an unhealthy amount of <span class="footer-coffee">☕</span> | No AI was harmed in the making of this portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
